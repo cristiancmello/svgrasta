@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  svgrasta:
+    build: 
+      context: .
+    working_dir: "/src"
+    ports:
+      - "3000:3000"  # development
+      - "8080:8080"  # production
+    volumes:
+      - "./src:/src"
+      - "./examples:/examples"
+    tty: true

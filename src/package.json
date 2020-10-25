@@ -1,0 +1,16 @@
+{
+  "name": "svgrasta",
+  "version": "0.1.0",
+  "description": "SVG Rasterization Server",
+  "author": "Cristian Mello <cristianc.mello@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "export NODE_ENV=production && node server.js",
+    "dev": "export NODE_ENV=development && nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
